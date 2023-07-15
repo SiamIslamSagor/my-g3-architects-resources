@@ -3,11 +3,20 @@
 
 /* shared styles */
 * {
+    margin: 0;
+    padding: 0;
     font-family: 'Work Sans', sans-serif;
 }
 
 .btn-all {
-    
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.25rem;
+    background: #FF900E;
+    padding: 20px 25px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 0;
 }
 
 /* header styles start  */
@@ -28,7 +37,7 @@ nav {
     color: #131313;
 }
 
-nav > ul {
+nav>ul {
     display: flex;
 }
 
@@ -46,7 +55,6 @@ nav li a {
 
 /* banner styles */
 .banner-content {
-    min-width: 800px;
     text-align: center;
     margin: 0 auto;
 }
@@ -59,4 +67,33 @@ nav li a {
 
 .banner-p {
     color: #727272;
+}
+
+.banner img {
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+/* responsive media screen */
+/* mobile devices */
+
+@media screen and (max-width:576px) {
+    header {
+        padding: 20px;
+    }
+    nav {
+        flex-direction: column;
+    }
+}
+
+/* tablet or medium devices */
+@media screen and (min-width:576px) and (max-width:960px) {
+
+    header {
+        padding: 50px;
+    }
+    nav {
+        flex-direction: column;
+    }
 }
